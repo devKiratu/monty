@@ -52,6 +52,7 @@ void handle_div(stack_t **stack, unsigned int line_number);
 void handle_mul(stack_t **stack, unsigned int line_number);
 void handle_mod(stack_t **stack, unsigned int line_number);
 void handle_pchar(stack_t **stack, unsigned int line_number);
+void handle_pstr(stack_t **stack, unsigned int line_number);
 int _isdigit(int c);
 
 #endif
