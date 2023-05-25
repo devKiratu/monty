@@ -67,6 +67,7 @@ void process_opcodes(stack_t **stack, char *opcode, unsigned int line)
 		{"mod", handle_mod},
 		{"pchar", handle_pchar},
 		{"pstr", handle_pstr},
+		{"rotl", handle_rotl},
 	};
 
 	len = sizeof(stack_ops) / sizeof(instruction_t);
