@@ -42,6 +42,7 @@ void process_opcodes(stack_t **stack, char *opcode, unsigned int line);
 void handle_pall(stack_t **stack, unsigned int line_number);
 void handle_push(stack_t **stack, unsigned int line_number);
 void handle_pint(stack_t **stack, unsigned int line_number);
+void handle_pop(stack_t **stack, unsigned int line_number);
 int _isdigit(int c);
 
 #endif
