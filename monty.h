@@ -38,6 +38,7 @@ typedef struct instruction_s
 } instruction_t;
 
 char *_strdup(char *str);
+int _isalpha(int c);
 void process_opcodes(stack_t **stack, char *opcode, unsigned int line);
 void handle_pall(stack_t **stack, unsigned int line_number);
 void handle_push(stack_t **stack, unsigned int line_number);
@@ -50,6 +51,7 @@ void handle_sub(stack_t **stack, unsigned int line_number);
 void handle_div(stack_t **stack, unsigned int line_number);
 void handle_mul(stack_t **stack, unsigned int line_number);
 void handle_mod(stack_t **stack, unsigned int line_number);
+void handle_pchar(stack_t **stack, unsigned int line_number);
 int _isdigit(int c);
 
 #endif
