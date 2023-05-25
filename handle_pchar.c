@@ -17,7 +17,7 @@ void handle_pchar(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	n = (*stack)->n;
-	if (!_isalpha(n))
+	if (n < 0 || n > 127)
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", l_no);
 		exit(EXIT_FAILURE);
