@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 		token = strtok(str, delim);
 		op_value = strtok(NULL, delim);
 
-		if (token != NULL)
+		if (token != NULL && token[0] != '#')
 			process_opcodes(&stack, token, line);
 
 		if (buffer[strlen(s) - 1] == '\n')
