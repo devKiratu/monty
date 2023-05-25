@@ -19,7 +19,7 @@ void handle_pstr(stack_t **stack, unsigned int line_number)
 	temp = *stack;
 	while (temp != NULL)
 	{
-		if (temp->n == 0 || !_isalpha(temp->n))
+		if (temp->n == 0 || !(temp->n > 0 && temp->n <= 127))
 			break;
 		putchar(temp->n);
 		temp = temp->next;
