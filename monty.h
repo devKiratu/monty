@@ -2,6 +2,7 @@
 #define MONTY_H
 
 extern char *op_value;
+extern unsigned int stack_mode;
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -55,7 +56,11 @@ void handle_pchar(stack_t **stack, unsigned int line_number);
 void handle_pstr(stack_t **stack, unsigned int line_number);
 void handle_rotl(stack_t **stack, unsigned int line_number);
 void handle_rotr(stack_t **stack, unsigned int line_number);
+void handle_stack(stack_t **stack, unsigned int line_number);
+void handle_queue(stack_t **stack, unsigned int line_number);
 int _isdigit(int c);
 void free_stack(stack_t *stack);
+void add_as_stack(stack_t **stack, stack_t *new);
+void add_as_queue(stack_t **stack, stack_t *new);
 
 #endif
