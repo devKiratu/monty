@@ -12,7 +12,7 @@ void handle_rotr(stack_t **stack, unsigned int line_number)
 	stack_t *temp = *stack;
 	int new, current;
 
-	if (*stack == NULL)
+	if (*stack == NULL || (*stack)->next == NULL)
 		return;
 	temp = *stack;
 	new = temp->n;
